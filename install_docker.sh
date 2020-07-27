@@ -3,7 +3,7 @@ sudo apt-get update
 sudo apt-get remove docker docker-engine docker.io containerd runc
 
 # Set up the repository
-sudo apt-get install \
+sudo apt-get -y install \
   apt-transport-https \
   ca-certificates \
   curl \
@@ -19,7 +19,7 @@ sudo add-apt-repository \
 
 # Install Docker Engine
 sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 # Pull cassandra image
 sudo docker pull cassandra:latest
